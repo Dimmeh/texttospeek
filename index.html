@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Speech synthesiser</h1>
+
+<p class="content">
+    The Special Battle rules for Season 10 have been revealed. Season 10 will run from May 15th to July 10th 2018 and runs on Sun & Moon and Pokémon Ultra Sun & Ultra Moon, with rankings separate to eachother. This ruleset is rather standard but runs Inverse Battles, meaning that the type chart is inverted, so Normal-types are super effective against Ghost-types and so forth
+    Battle type: Double Battle - Inverse Battles
+    Pokémon Restrictions: National Pokédex. No Mewtwo, Mew, Lugia, Ho-Oh, Celebi, Kyogre, Groudon, Rayquaza, Jirachi, Deoxys, Dialga, Palkia, Giratina, Phione, Manaphy, Darkrai, Shaymin, Arceus, Victini, Reshiram, Zekrom, Kyurem, Keldeo, Meloetta, Genesect, Xerneas, Yveltal, Zygarde, Diancie, Hoopa, Volcanion, Cosmog, Cosmoem, Solgaleo, Lunala, Necrozma, Magearna, and Marshadow.
+    The other standard rules apply, including all set to Level 50 if above that, and you choose 4 Pokémon out of your 6, and you cannot have two Pokémon holding the same hold item. Battles have a 10 minute duration, with turns having a 60 second timer.
+</p><button onclick="startTextToSpeech('content')">Lees voor</button>
+
+
+<p class="contentNL">
+    De nieuwe regio die in dit spel is geïntroduceerd heet Alola, deze regio is gebaseerd op Hawaï. Alola bestaat uit vier grote eilanden en een aantal kleinere, waarvan één een kunstmatig eiland is.
+
+    Pokémon Sun en Moon hebben een nieuw type aanval geïntroduceerd: de Z-move. Z-moves zijn sterkere versies van normale aanvallen, maar kunnen slechts één keer in een gevecht gebruikt worden.
+</p><button onclick="startTextToSpeech('contentNL')">Lees voor</button>
+
+
+
+<form>
+    <input type="text" class="txt">
+    <div>
+        <label for="rate">Rate</label><input type="range" min="0.5" max="2" value="1" step="0.1" id="rate">
+        <div class="rate-value">1</div>
+        <div class="clearfix"></div>
+    </div>
+    <div>
+        <label for="pitch">Pitch</label><input type="range" min="0" max="2" value="1" step="0.1" id="pitch">
+        <div class="pitch-value">1</div>
+        <div class="clearfix"></div>
+    </div>
+    <label>
+        <select>
+            <option data-lang="nl-NL" data-name="Microsoft Zira Desktop - Nederland">Nederlands</option>
+            <option data-lang="en-US" data-name="Google US English">Google US English (en-US)</option>
+        </select>
+    </label>
+</form>
+
+<script src="main.js"></script>
+
+</body>
+</html>
